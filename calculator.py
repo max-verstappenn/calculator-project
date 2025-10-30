@@ -17,11 +17,9 @@ def divide(a, b):
 # Основная программа
 print("Простой калькулятор")
 print("Доступные операции: +, -, *, /")
-def power(a, b):
-    return a ** b
-
-def square_root(a):
-    return a ** 0.5
-
-print("Улучшенный калькулятор")
-print("Доступные операции: +, -, *, /, ^, sqrt")
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите число")
