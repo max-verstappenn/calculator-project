@@ -17,3 +17,9 @@ def divide(a, b):
 # Основная программа
 print("Простой калькулятор")
 print("Доступные операции: +, -, *, /")
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите число")
